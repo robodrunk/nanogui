@@ -33,3 +33,6 @@ docs/api
 # should not ever be needed again unless there are new
 # icons added :)
 resources/nanogui-entypo
+VC/NanoGuiTest.vcxproj.user
+VC/.vs/
+VC/x64/
