@@ -162,6 +162,41 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\nanogui\button.h" />
+    <ClInclude Include="..\include\nanogui\checkbox.h" />
+    <ClInclude Include="..\include\nanogui\colorpicker.h" />
+    <ClInclude Include="..\include\nanogui\colorwheel.h" />
+    <ClInclude Include="..\include\nanogui\combobox.h" />
+    <ClInclude Include="..\include\nanogui\common.h" />
+    <ClInclude Include="..\include\nanogui\compat.h" />
+    <ClInclude Include="..\include\nanogui\entypo.h" />
+    <ClInclude Include="..\include\nanogui\formhelper.h" />
+    <ClInclude Include="..\include\nanogui\glcanvas.h" />
+    <ClInclude Include="..\include\nanogui\glutil.h" />
+    <ClInclude Include="..\include\nanogui\graph.h" />
+    <ClInclude Include="..\include\nanogui\imagepanel.h" />
+    <ClInclude Include="..\include\nanogui\imageview.h" />
+    <ClInclude Include="..\include\nanogui\label.h" />
+    <ClInclude Include="..\include\nanogui\layout.h" />
+    <ClInclude Include="..\include\nanogui\messagedialog.h" />
+    <ClInclude Include="..\include\nanogui\nanogui.h" />
+    <ClInclude Include="..\include\nanogui\object.h" />
+    <ClInclude Include="..\include\nanogui\opengl.h" />
+    <ClInclude Include="..\include\nanogui\popup.h" />
+    <ClInclude Include="..\include\nanogui\popupbutton.h" />
+    <ClInclude Include="..\include\nanogui\progressbar.h" />
+    <ClInclude Include="..\include\nanogui\python.h" />
+    <ClInclude Include="..\include\nanogui\screen.h" />
+    <ClInclude Include="..\include\nanogui\slider.h" />
+    <ClInclude Include="..\include\nanogui\stackedwidget.h" />
+    <ClInclude Include="..\include\nanogui\tabheader.h" />
+    <ClInclude Include="..\include\nanogui\tabwidget.h" />
+    <ClInclude Include="..\include\nanogui\textbox.h" />
+    <ClInclude Include="..\include\nanogui\theme.h" />
+    <ClInclude Include="..\include\nanogui\toolbutton.h" />
+    <ClInclude Include="..\include\nanogui\vscrollpanel.h" />
+    <ClInclude Include="..\include\nanogui\widget.h" />
+    <ClInclude Include="..\include\nanogui\window.h" />
     <ClInclude Include="precomp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
