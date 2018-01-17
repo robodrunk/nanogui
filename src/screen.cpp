@@ -42,6 +42,9 @@ std::map<GLFWwindow *, Screen *> __nanogui_screens;
 #if defined(NANOGUI_GLAD)
 static bool gladInitialized = false;
 #endif
+#if defined(NANOGUI_GLEW)
+static bool glewInitialized = false;
+#endif
 
 /* Calculate pixel ratio for hi-dpi devices. */
 static float get_pixel_ratio(GLFWwindow *window) {
@@ -291,6 +294,12 @@ void Screen::initialize(GLFWwindow *window, bool shutdownGLFWOnDestruct) {
             throw std::runtime_error("Could not initialize GLAD!");
         glGetError(); // pull and ignore unhandled errors like GL_INVALID_ENUM
     }
+#endif
+#if defined(NANOGUI_GLEW)
+	if (!glewInitialized) {
+		glewInitialized = true;
+		glewInit();
+	}
 #endif
 
     /* Detect framebuffer properties and set up compatible NanoVG context */

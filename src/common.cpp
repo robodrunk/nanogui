@@ -53,6 +53,10 @@ void init() {
         }
     );
 
+#ifdef NANOVG_GLEW
+	glewInit();
+#endif
+
     if (!glfwInit())
         throw std::runtime_error("Could not initialize GLFW!");
 

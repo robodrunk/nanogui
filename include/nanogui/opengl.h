@@ -31,6 +31,12 @@
 #endif
 #endif // DOXYGEN_SHOULD_SKIP_THIS
 
+#ifdef NANOVG_GLEW
+#	include <GL/glew.h>
+#endif
+
+#define NANOVG_GL3_IMPLEMENTATION
+#define GLFW_INCLUDE_GLEXT
 #include <GLFW/glfw3.h>
 #include <nanovg.h>
 
