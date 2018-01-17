@@ -50,7 +50,7 @@
 #  pragma warning(disable: 4457 4456 4005 4312)
 #endif
 
-#define STB_IMAGE_IMPLEMENTATION
+//#define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
 #if defined(_WIN32)
@@ -226,13 +226,13 @@ public:
             dlg->setCallback([](int result) { cout << "Dialog result: " << result << endl; });
         });
 
-        vector<pair<int, string>>
-            icons = loadImageDirectory(mNVGContext, "icons");
-        #if defined(_WIN32)
-            string resourcesFolderPath("../resources/");
-        #else
-            string resourcesFolderPath("./");
-        #endif
+#if defined(_WIN32)
+		string resourcesFolderPath("../resources/");
+#else
+		string resourcesFolderPath("./");
+#endif
+		vector<pair<int, string>>
+            icons = loadImageDirectory(mNVGContext, resourcesFolderPath + "icons");
 
         new Label(window, "Image panel & scroll panel", "sans-bold");
         PopupButton *imagePanelBtn = new PopupButton(window, "Image Panel");
